@@ -11,7 +11,8 @@ def attack(char_name, char_class):
     if char_class == 'healer':
         return (f'{char_name} нанёс противнику урон, равный '
                 f'{5 + randint(-3, -1)}')
-    return (f'{char_name} не ненёс урон противнику') 
+    return (f'{char_name} не ненёс урон противнику')
+
 
 def defence(char_name, char_class):
     if char_class == 'warrior':
@@ -20,7 +21,8 @@ def defence(char_name, char_class):
         return (f'{char_name} блокировал {10 + randint(-2, 2)} ед. урона')
     if char_class == 'healer':
         return (f'{char_name} блокировал {10 + randint(2, 5)} ед. урона')
-    return (f'{char_name} не блокировал урон противника') 
+    return (f'{char_name} не блокировал урон противника')
+
 
 def special(char_name, char_class):
     if char_class == 'warrior':
@@ -30,7 +32,8 @@ def special(char_name, char_class):
         return (f'{char_name} применил специальное умение «Атака {5 + 40}»')
     if char_class == 'healer':
         return (f'{char_name} применил специальное умение «Защита {10 + 30}»')
-    return (f'{char_name} не применил специальное умение') 
+    return (f'{char_name} не применил специальное умение')
+
 
 def start_training(char_name, char_class):
     if char_class == 'warrior':
@@ -88,3 +91,5 @@ def main():
     print('Воитель, Маг, Лекарь')
     char_class = choice_char_class()
     print(start_training(char_name, char_class))
+
+# This is the end file.
